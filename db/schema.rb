@@ -10,21 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_24_154301) do
+ActiveRecord::Schema.define(version: 2020_02_24_171700) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "dinners", force: :cascade do |t|
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
+  create_table "bookings", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "dinner_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["email"], name: "index_dinners_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_dinners_on_reset_password_token", unique: true
+    t.index ["dinner_id"], name: "index_bookings_on_dinner_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
+  end
+
+  create_table "dinners", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.string "location"
+    t.string "cuisine"
+    t.integer "capacity"
+    t.integer "price"
+    t.string "title"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.datetime "datetime"
+    t.index ["user_id"], name: "index_dinners_on_user_id"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string "title"
+    t.string "comment"
+    t.integer "rating"
+    t.bigint "booking_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["booking_id"], name: "index_reviews_on_booking_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -39,4 +59,8 @@ ActiveRecord::Schema.define(version: 2020_02_24_154301) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "bookings", "dinners"
+  add_foreign_key "bookings", "users"
+  add_foreign_key "dinners", "users"
+  add_foreign_key "reviews", "bookings"
 end
