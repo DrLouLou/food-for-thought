@@ -22,6 +22,6 @@ private
   end
 
   def find_booking_id
-    @review = Review.find(params[:booking_id])
+    @review = Review.find(params[:id])
   end
 end
