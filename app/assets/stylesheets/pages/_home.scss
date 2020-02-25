@@ -11,12 +11,22 @@
   float: top;
   border: 1px white solid;
   background-color: white;
-  border-radius: 7px;
-  width: 700px;
-
+  border-radius: 5px;
+  width: 500px;
+  position: relative;
+  margin-top: -175px;
+  height: 465px;
 }
+
+.seach-container  {
+  top: 20%;
+  left: 20%;
+}
+
+
 h5 {
   text-align: left;
+  font-size: 14px;
 }
 .search-input {
   padding: 15px 10px;
@@ -62,10 +72,11 @@ h5 {
 }
 #button {
   color: white;
-  padding: 8px 24px;
+  padding: 8px 15px;
   border-radius: 4px;
   background: green;
   transition: background 0.3s ease;
+  margin-top: 12px;
   &:hover {
   background: darkgreen;
   color: white;
@@ -73,7 +84,7 @@ h5 {
 }
 .logo-written {
   font-family: 'Arizonia';
-  font-size: 50px;
+  font-size: 40px;
   }
 #navbar {
   position: absolute;
@@ -101,4 +112,8 @@ h5 {
 .nav-item {
  space-around: 100px;
 
+}
+
+.form {
+  height: 300px;
 }
