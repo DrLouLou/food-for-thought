@@ -1,5 +1,5 @@
 class DinnersController < ApplicationController
-  before_action :find_dinner_id, only: :show, :edit, :update, :destroy
+  before_action :find_dinner_id, only: [:show, :edit, :update, :destroy]
 
   def index
     @dinners = Dinner.all
