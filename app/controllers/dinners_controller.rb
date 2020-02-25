@@ -18,6 +18,7 @@ class DinnersController < ApplicationController
       redirect_to dinner_path(@dinner)
     else
       render :new
+    end
   end
 
 private
