@@ -3,17 +3,33 @@
   height: 800px;
   background-size: cover;
   padding: 50px;
-  text-align: center;
+  text-align: left;
   display: flex;
-
-  h1 {
-
+  align-items: left;
+  .container {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    h1 {
+    font-weight: bold;
+    }
+    p {
+    font-size: 20px;
+    }
   }
-
-  p {
-
-  }
-
-
 }
-
+#button {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: green;
+  transition: background 0.3s ease;
+  &:hover {
+  background: darkgreen;
+  color: white;
+  }
+}
+.logo {
+  font-family: 'Arizonia';
+  font-size: 50px;
+  }
