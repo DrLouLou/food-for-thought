@@ -1,137 +1,4 @@
 // Specific CSS for your home-page
-<<<<<<< HEAD
-
-// .search-container{
-//   align: left;
-//   text-align: center;
-//   // justify-content: space-around;
-//   display: flex;
-//   margin: 50px;
-// }
-
-// .search-form {
-//   // border: solid 2px black;
-//   margin: 10px 30px;
-//   padding: 20px 20px;
-//   display: flex;
-//   justify-content: space-around;
-//   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-// }
-
-// h5 {
-//   text-align: left;
-// }
-
-// .search-input {
-//   padding: 15px 10px;
-//   margin: 15px 10px;
-// }
-
-// .button-box {
-//   text-align: right;
-// }
-
-// .btn-yours {
-//   color: rgb(80, 135, 62);
-//   background-color: white;
-//   border: solid 1px rgb(80, 135, 62) ;
-//   padding: 10px 20px;
-//   border-radius: 5px;
-//   transition: .5s;
-// }
-
-// .btn-yours:hover {
-//   background-color: rgb(80, 135, 62);
-//   color: white;
-//   text-decoration:none;
-// }
-
-.cards-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 15px;
-  margin: 10px 15px;
-  // flex-wrap: wrap;
-   // justify-content: space-around;
-  // display: flex;
-   // padding: 5px 10px;
-}
-
-// .card-trip {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 1fr;
-//   margin: 0 10px;
-//   grid-gap: 16px;
-//   border: solid 1px black;
-//   overflow: hidden;
-//   background: white;
-//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-// }
-
-// .card-img {
-//   size: 10px;
-// }
-
-.card-trip {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 290px;
-  border-radius: 5px;
-}
-
-.card-trip > img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card-trip h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card-trip p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-}
-
-.dinner-details {
-  padding: 10px 0;
-}
-
-
-.card-trip .card-trip-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
-
-}
-
-.card-trip-infos .card-trip-user {
-  position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 40px;
-}
-
-.card-link {
-  text-decoration: none;
-  color: black;
-  transition: 1s;
-}
-
-.card-link:hover{
-  color:black;
-  transform: scale(1.05);
-}
-
-=======
-// Specific CSS for your home-page
 .search-form {
   // border: solid 2px black;
   margin: 10px 30px;
@@ -190,7 +57,7 @@ h5 {
   align-items: left;
   background-repeat: no-repeat;
 
-  .container {
+  .special-container {
     position: absolute;
     left: 10%;
     top: 40%;
@@ -249,4 +116,3 @@ h5 {
 .form {
   height: 300px;
 }
->>>>>>> master

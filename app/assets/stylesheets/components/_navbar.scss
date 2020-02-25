@@ -8,3 +8,13 @@
 .navbar-lewagon .navbar-brand img {
   width: 50px;
 }
+.black-text {
+  color: black !important;
+  &:hover {
+    color: darkgreen !important;
+  }
+}
+
+.spacing {
+  height: 100px;
+}

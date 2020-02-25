@@ -10,8 +10,10 @@
   </head>
 
   <body>
-<!--     <p class="notice"><%= notice %></p> -->
-    <p class="alert"><%= alert %></p>
+    <%= render 'shared/navbar' %>
+    <% unless action_name == 'home' %>
+      <div class="spacing"></div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
