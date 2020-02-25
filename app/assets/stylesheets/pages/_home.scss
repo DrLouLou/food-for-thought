@@ -9,9 +9,24 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   overflow: hidden;
   float: top;
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 5px;
+  width: 500px;
+  position: relative;
+  margin-top: -175px;
+  height: 465px;
 }
+
+.seach-container  {
+  top: 20%;
+  left: 20%;
+}
+
+
 h5 {
   text-align: left;
+  font-size: 14px;
 }
 .search-input {
   padding: 15px 10px;
@@ -30,11 +45,11 @@ h5 {
 }
 .btn-yours:hover {
   background-color: rgb(80, 135, 62);
-  color: white;
-  text-decoration:none;
+  color: #484848;
+  text-decoration: none;
 }
 .banner {
-  color: white;
+  color: #484848;
   height: 800px;
   background-size: cover;
   padding: 50px;
@@ -42,6 +57,7 @@ h5 {
   display: flex;
   align-items: left;
   background-repeat: no-repeat;
+
   .container {
     position: absolute;
     left: 10%;
@@ -56,10 +72,11 @@ h5 {
 }
 #button {
   color: white;
-  padding: 8px 24px;
+  padding: 8px 15px;
   border-radius: 4px;
   background: green;
   transition: background 0.3s ease;
+  margin-top: 12px;
   &:hover {
   background: darkgreen;
   color: white;
@@ -67,10 +84,36 @@ h5 {
 }
 .logo-written {
   font-family: 'Arizonia';
-  font-size: 50px;
+  font-size: 40px;
   }
 #navbar {
   position: absolute;
   width: auto;
-  background-color: none;
+  background-color: transparent;
+  color: #484848;
+  width: 100%;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  &:hover {
+    color: darkgreen;
+  }
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: white;
+  &:hover {
+   color: darkgreen;
+  }
+}
+
+.nav-item {
+ space-around: 100px;
+
+}
+
+.form {
+  height: 300px;
 }
