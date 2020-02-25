@@ -1,1 +1,76 @@
 // Specific CSS for your home-page
+// Specific CSS for your home-page
+.search-form {
+  // border: solid 2px black;
+  margin: 10px 30px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+  float: top;
+}
+h5 {
+  text-align: left;
+}
+.search-input {
+  padding: 15px 10px;
+  margin: 15px 10px;
+}
+.button-box {
+  text-align: right;
+}
+.btn-yours {
+  color: rgb(80, 135, 62);
+  background-color: white;
+  border: solid 1px rgb(80, 135, 62) ;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: .5s;
+}
+.btn-yours:hover {
+  background-color: rgb(80, 135, 62);
+  color: white;
+  text-decoration:none;
+}
+.banner {
+  color: white;
+  height: 800px;
+  background-size: cover;
+  padding: 50px;
+  text-align: left;
+  display: flex;
+  align-items: left;
+  background-repeat: no-repeat;
+  .container {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    h1 {
+    font-weight: bold;
+    }
+    p {
+    font-size: 20px;
+    }
+  }
+}
+#button {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: green;
+  transition: background 0.3s ease;
+  &:hover {
+  background: darkgreen;
+  color: white;
+  }
+}
+.logo-written {
+  font-family: 'Arizonia';
+  font-size: 50px;
+  }
+#navbar {
+  position: absolute;
+  width: auto;
+  background-color: none;
+}
