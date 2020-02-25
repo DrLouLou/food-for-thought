@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -34,10 +34,45 @@
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <%#= link_to "Action", "#", class: "dropdown-item" %>
           <%#= link_to "Another action", "#", class: "dropdown-item" %>
+=======
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Homepage</title>
+</head>
+<body>
+<div class='navbar navbar-expand-sm navbar-light navbar-lewagon' id="navbar">
+    <%= link_to '#', class: 'navbar-brand' do %>
+    <%= image_tag '/images/logo.png' %>
+  <% end %>
+  <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+    <span class='navbar-toggler-icon'></span>
+  </button>
+  <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+    <ul class='navbar-nav mr-auto'>
+      <li class='nav-item'>
+        <%= link_to 'Help', '#', class: 'nav-link' %>
+      </li>
+      <li class='nav-item active'>
+        <%= link_to 'Host a dinner', '#', class: 'nav-link' %>
+      </li>
+      <li class='nav-item'>
+        <%= link_to 'Sign up', '#', class: 'nav-link' %>
+      </li>
+      <li class='nav-item'>
+        <%= link_to 'Log in', new_user_session_path, class: 'nav-link' %>
+      </li>
+     <!--  <li class='nav-item dropdown'>
+        <%= image_tag 'https://kitt.lewagon.com/placeholder/users/ssaunier', class: 'avatar dropdown-toggle', id: 'navbarDropdown', data: { toggle: 'dropdown' }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <div class='dropdown-menu dropdown-menu-right' aria-labelledby='navbarDropdown'>
+          <%= link_to 'Action', '#', class: 'dropdown-item' %>
+          <%= link_to 'Another action', '#', class: 'dropdown-item' %>
+>>>>>>> master
         </div>
       </li> -->
     </ul>
   </div>
+<<<<<<< HEAD
   </div>
 
 
@@ -46,27 +81,29 @@
     <%link_to dinner_path(dinner) class: 'card-link' %>
     <div class="card-trip">
       <img src="https://images.unsplash.com/photo-1582234383980-59933689fb44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80"/>
-        <div class="card-trip-infos">
-          <div class="card-trip-details">
-            <h2><%= @dinner.title %></h2>
-            <div class="dinner-details">
-              <h6><%= @dinner.cuisine %></h6>
-              <p>I will be cooking Mexican tomorrow evening for anyone that wants to join!</p>
-            </div>
-            <div class="dinner-details">
-              <h6><%= @dinner.location %></h6>
-              <p>Nearest station: Hoxton (exact address to be shared upon accepting request</p>
-            </div>
-            <div class="dinner-details">
-              <h6><%= @dinner.capacity %></h6>
-              <p>Max: 6 people</p>
-            </div>
-            <div>
-              <h2 class="card-trip-pricing"><%= @dinner.price %></h2>
+      <div class="card-trip-infos">
+        <div class="card-trip-details">
+          <h2><%= @dinner.title %></h2>
+          <div class="dinner-details">
+            <h6><%= @dinner.cuisine %></h6>
+            <p>I will be cooking Mexican tomorrow evening for anyone that wants to join!</p>
+          </div>
+          <div class="dinner-details">
+            <h6><%= @dinner.location %></h6>
+            <p>Nearest station: Hoxton (exact address to be shared upon accepting request</p>
+          </div>
+          <div class="dinner-details">
+            <h6><%= @dinner.capacity %></h6>
+            <p>Max: 6 people</p>
+          </div>
+          <div>
+            <h2 class="card-trip-pricing"><%= @dinner.price %></h2>
              <!--  <img src="" class="card-trip-user avatar-bordered" /> -->
           </div>
         </div>
+      </div>
     </div>
+  <% end %>
 </div>
 
 
@@ -129,3 +166,50 @@
 </div> -->
 
 
+=======
+</div>
+
+<div class='content'>
+  <div class='banner' style='background-image: url(https://images.unsplash.com/photo-1547573854-74d2a71d0826?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);'>
+    <div class='container'>
+      <h1></h1>
+    <!--   <p>Have a great dining experience and meet new people at the same time by enjoying food together</p> -->
+    <div class='search-container'>
+      <div class='search-form'>
+        <form action='#'>
+          <h3>Connecting people through food with <em class='logo-written'>FoodforThought</em></h3>
+            <div class='search-input'>
+              <h5>WHERE</h5>
+                <div class='input-group mb-3'>
+                  <input type='text' class='form-control' aria-label='Default' aria-describedby='inputGroup-sizing-default' placeholder='City'>
+                </div>
+              <h5>WHEN</h5>
+                <div class='md-form'>
+                  <input placeholder='Selected date' type='text' id='date-picker-example' class='form-control datepicker'>
+                  <label for='date-picker-example'></label>
+                </div>
+              <h5>GUESTS</h5>
+                <div class='input-group mb-3'>
+                  <select class='custom-select' id='inputGroupSelect01'>
+                    <option selected>Guests</option>
+                    <option value='1'>One</option>
+                    <option value='2'>Two</option>
+                    <option value='3'>Three</option>
+                  </select>
+                </div>
+                <div class='button-box'>
+                <a class='btn btn-flat' href='#' id='button'>Book a dinner now</a>
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<!--   <h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+ -->
+</body>
+</html>
+>>>>>>> master

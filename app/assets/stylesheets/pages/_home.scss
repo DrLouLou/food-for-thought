@@ -1,4 +1,5 @@
 // Specific CSS for your home-page
+<<<<<<< HEAD
 
 // .search-container{
 //   align: left;
@@ -129,3 +130,123 @@
   transform: scale(1.05);
 }
 
+=======
+// Specific CSS for your home-page
+.search-form {
+  // border: solid 2px black;
+  margin: 10px 30px;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+  float: top;
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 5px;
+  width: 500px;
+  position: relative;
+  margin-top: -175px;
+  height: 465px;
+}
+
+.seach-container  {
+  top: 20%;
+  left: 20%;
+}
+
+
+h5 {
+  text-align: left;
+  font-size: 14px;
+}
+.search-input {
+  padding: 15px 10px;
+  margin: 15px 10px;
+}
+.button-box {
+  text-align: right;
+}
+.btn-yours {
+  color: rgb(80, 135, 62);
+  background-color: white;
+  border: solid 1px rgb(80, 135, 62) ;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: .5s;
+}
+.btn-yours:hover {
+  background-color: rgb(80, 135, 62);
+  color: #484848;
+  text-decoration: none;
+}
+.banner {
+  color: #484848;
+  height: 800px;
+  background-size: cover;
+  padding: 50px;
+  text-align: left;
+  display: flex;
+  align-items: left;
+  background-repeat: no-repeat;
+
+  .container {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    h1 {
+    font-weight: bold;
+    }
+    p {
+    font-size: 20px;
+    }
+  }
+}
+#button {
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background: green;
+  transition: background 0.3s ease;
+  margin-top: 12px;
+  &:hover {
+  background: darkgreen;
+  color: white;
+  }
+}
+.logo-written {
+  font-family: 'Arizonia';
+  font-size: 40px;
+  }
+#navbar {
+  position: absolute;
+  width: auto;
+  background-color: transparent;
+  color: #484848;
+  width: 100%;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  &:hover {
+    color: darkgreen;
+  }
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: white;
+  &:hover {
+   color: darkgreen;
+  }
+}
+
+.nav-item {
+ space-around: 100px;
+
+}
+
+.form {
+  height: 300px;
+}
+>>>>>>> master

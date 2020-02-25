@@ -1,0 +1,29 @@
+<div class="cards-container">
+  <% @dinners.each do |dinner| %>
+    <%link_to dinner_path(dinner) class: 'card-link' %>
+    <div class="card-trip">
+      <img src="https://images.unsplash.com/photo-1582234383980-59933689fb44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80"/>
+      <div class="card-trip-infos">
+        <div class="card-trip-details">
+          <h2><%= @dinner.title %></h2>
+          <div class="dinner-details">
+            <h6><%= @dinner.cuisine %></h6>
+            <p>I will be cooking Mexican tomorrow evening for anyone that wants to join!</p>
+          </div>
+          <div class="dinner-details">
+            <h6><%= @dinner.location %></h6>
+            <p>Nearest station: Hoxton (exact address to be shared upon accepting request</p>
+          </div>
+          <div class="dinner-details">
+            <h6><%= @dinner.capacity %></h6>
+            <p>Max: 6 people</p>
+          </div>
+          <div>
+            <h2 class="card-trip-pricing"><%= @dinner.price %></h2>
+             <!--  <img src="" class="card-trip-user avatar-bordered" /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
