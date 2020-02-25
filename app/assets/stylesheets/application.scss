@@ -11,3 +11,8 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// temporary css grid hack to align cards
+.card-link + .card-link {
+  margin-left: 0px;
+}
