@@ -7,7 +7,7 @@
 <body>
 <div class='navbar navbar-expand-sm navbar-light navbar-lewagon' id="navbar">
     <%= link_to '#', class: 'navbar-brand' do %>
-    <%= image_tag '/images/logo.png' %>
+    <%= image_tag 'logo.png' %>
   <% end %>
   <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
     <span class='navbar-toggler-icon'></span>
@@ -44,21 +44,21 @@
     <!--   <p>Have a great dining experience and meet new people at the same time by enjoying food together</p> -->
     <div class='search-container'>
       <div class='search-form'>
-        <form action='#'>
+        <form action="<%= dinners_path %>">
           <h3>Connecting people through food with <em class='logo-written'>FoodforThought</em></h3>
             <div class='search-input'>
               <h5>WHERE</h5>
                 <div class='input-group mb-3'>
-                  <input type='text' class='form-control' aria-label='Default' aria-describedby='inputGroup-sizing-default' placeholder='City'>
+                  <input type='text' class='form-control' aria-label='Default' aria-describedby='inputGroup-sizing-default' placeholder='City' name="city">
                 </div>
               <h5>WHEN</h5>
                 <div class='md-form'>
-                  <input placeholder='Selected date' type='text' id='date-picker-example' class='form-control datepicker'>
+                  <input type='' id='date-picker-example' class='form-control datepicker' name="date">
                   <label for='date-picker-example'></label>
                 </div>
               <h5>GUESTS</h5>
                 <div class='input-group mb-3'>
-                  <select class='custom-select' id='inputGroupSelect01'>
+                  <select class='custom-select' id='inputGroupSelect01' name="guests">
                     <option selected>Guests</option>
                     <option value='1'>One</option>
                     <option value='2'>Two</option>
@@ -66,7 +66,7 @@
                   </select>
                 </div>
                 <div class='button-box'>
-                <a class='btn btn-flat' href='#' id='button'>Book a dinner now</a>
+                  <button class='btn btn-flat' type="submit" id='button'>Book a dinner now</button>
                 </div>
             </div>
         </form>

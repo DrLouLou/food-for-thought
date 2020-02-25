@@ -50,7 +50,7 @@ h5 {
 }
 .banner {
   color: #484848;
-  height: 800px;
+  height: 100vh;
   background-size: cover;
   padding: 50px;
   text-align: left;
@@ -116,4 +116,10 @@ h5 {
 
 .form {
   height: 300px;
+}
+
+.navbar-brand {
+  height: 50px;
+  width: auto;
+
 }
