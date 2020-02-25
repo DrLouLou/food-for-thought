@@ -1,4 +1,5 @@
 class DinnersController < ApplicationController
+  before_action :find_dinner_id, only: :show, :edit, :update, :destroy
 
   def index
     @dinners = Dinner.all
@@ -14,6 +15,7 @@ class DinnersController < ApplicationController
 
   def create
     @dinner = Dinner.new(dinner_params)
+    @dinner.user = current_user
     if @dinner.save
       redirect_to dinner_path(@dinner)
     else
