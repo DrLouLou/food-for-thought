@@ -12,6 +12,8 @@
   <body>
 <!--     <p class="notice"><%= notice %></p> -->
     <p class="alert"><%= alert %></p>
+    <% style = params[:action] == 'home' ? 'home_navbar_style' : 'not_home_navbar_style' %>
+    <%= render "shared/navbar", locals: { styling: style }  %>
     <%= yield %>
   </body>
 </html>
