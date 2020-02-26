@@ -7,19 +7,19 @@
           <div class="card-trip-details">
             <h2><%= dinner.title %></h2>
             <div class="dinner-details">
-              <h6><%= dinner.cuisine %></h6>
-              <p>I will be cooking Mexican tomorrow evening for anyone that wants to join!</p>
+              <h6>Cuisine</h6>
+              <p><%= dinner.cuisine %></p>
             </div>
             <div class="dinner-details">
-              <h6><%= dinner.location %></h6>
-              <p>Nearest station: Hoxton (exact address to be shared upon accepting request</p>
+              <h6>Location</h6>
+              <p><%= dinner.location %></p>
             </div>
             <div class="dinner-details">
-              <h6><%= dinner.capacity %></h6>
-              <p>Max: 6 people</p>
+              <h6>Capacity</h6>
+              <p><%= dinner.capacity %></p>
             </div>
             <div>
-              <h2 class="card-trip-pricing"><%= dinner.price %></h2>
+              <h2 class="card-trip-pricing">£<%= dinner.price %></h2>
                <!--  <img src="" class="card-trip-user avatar-bordered" /> -->
             </div>
           </div>

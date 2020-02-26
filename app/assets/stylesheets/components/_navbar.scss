@@ -8,3 +8,12 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.home_navbar_style {
+  position: absolute;
+}
+
+.not_home_navbar_style {
+  background-color: pink !important;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
