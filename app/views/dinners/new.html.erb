@@ -5,10 +5,10 @@
   <div class="alert alert-danger d-none">Please review the problems below:</div>
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <div class="form-group row">
-    <label for="exampleInputTitle" class="col-sm-3 col-form-label">Title</label>
+    <label for="exampleInputName" class="col-sm-3 col-form-label">Name</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control" id="exampleInputTitle" placeholder="Your title" required>
-      <div class="invalid-feedback">Title can't be blank</div>
+      <input type="text" class="form-control" id="exampleInputName" placeholder="Your name" name="dinner[title]" required>
+      <div class="invalid-feedback">Name can't be blank</div>
       <div class="valid-feedback">Looks good!</div>
       <small class="form-text text-muted">e.g Spaghetti Bolognese</small>
     </div>
@@ -17,10 +17,10 @@
   <div class="form-group row">
     <label for="exampleInputEmail" class="col-sm-3 col-form-label">Cuisine</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control" id="exampleInputCuisine" placeholder="Your cuisine" autocomplete="cuisine" required>
+      <input type="text" class="form-control" id="exampleInputCuisine" placeholder="Your cuisine" autocomplete="cuisine" name="dinner[cuisine]" required>
       <div class="invalid-feedback">cuisine can't be blank</div>
       <div class="valid-feedback">mmm, YUM!</div>
-      <small class="form-text text-muted">smells delicious</small>
+      <small class="form-text text-muted">e.g Italian</small>
     </div>
   </div>
 
@@ -157,42 +157,19 @@
   </div>
 
   <div class="form-group row">
-    <label class="col-sm-3 col-form-label pt-0">Capacity</label>
+    <label for="exampleInputCapacity" class="col-sm-3 col-form-label">Capacity</label>
     <div class="col-sm-9">
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="exampleInlineRadioColor" id="exampleInlineRadio1" value="option1" required>
-        <label class="form-check-label" for="exampleInlineRadio1">1</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="exampleInlineRadioColor" id="exampleInlineRadio2" value="option2" required>
-        <label class="form-check-label" for="exampleInlineRadio2">2</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="exampleInlineRadioColor" id="exampleInlineRadio3" value="option3" required>
-        <label class="form-check-label" for="exampleInlineRadio3">3</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="exampleInlineRadioColor" id="exampleInlineRadio4" value="option4" required>
-        <label class="form-check-label" for="exampleInlineRadio4">4</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="exampleInlineRadioColor" id="exampleInlineRadio5" value="option5" required>
-        <label class="form-check-label" for="exampleInlineRadio5">5</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="exampleInlineRadioColor" id="exampleInlineRadio6" value="option6" required>
-        <label class="form-check-label" for="exampleInlineRadio6">6</label>
-      </div>
-      <div class="invalid-feedback">Please provide a valid value.</div>
-      <div class="valid-feedback">Nice!</div>
-      <small class="form-text text-muted">How many can you take?</small>
+      <input type="text" class="form-control" id="exampleInputCapacity" placeholder="How many guests can you take?" name="dinner[capacity]" required>
+      <div class="invalid-feedback">Capacity can't be blank</div>
+      <div class="valid-feedback">Looks good!</div>
+      <small class="form-text text-muted">e.g 1</small>
     </div>
   </div>
 
   <div class="form-group row">
     <label for="exampleInputPrice" class="col-sm-3 col-form-label">Price</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control" id="exampleInputPrice" placeholder="Your price" required>
+      <input type="number" class="form-control" id="exampleInputPrice" placeholder="Your price" name="dinner[price]" required>
       <div class="invalid-feedback">Price can't be blank</div>
       <div class="valid-feedback">That's pretty expensive to be honest</div>
       <small class="form-text text-muted">How much is your effort worth?</small>
