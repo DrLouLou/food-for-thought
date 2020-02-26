@@ -1,27 +1,29 @@
 <%# link_to booking_review_path %>
 <div class="show-container">
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1514843319620-4f042827c481?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)">
-    Mexican
+    <%= @dinner.title %>
   </div>
 
   <div class="card-product">
     <img src="https://avatars3.githubusercontent.com/u/58525813?s=460&v=4" />
     <div class="card-product-infos">
-      <h2>Owner</h2>
-      <p>I usually sleep <strong>for most part of</strong> the day.</p>
+     <p> <strong>Title:</strong> <%= @dinner.title %></p>
+     <p> <strong>Cuisine:</strong> <%= @dinner.cuisine %></p>
+     <p> <strong>Capacity:</strong> <%= @dinner.capacity %> people</p>
+     <p> <strong>Location:</strong> <%= @dinner.location %></p>
+    </div>
+    <div class="button">
+     <div class="join-button">
+      <button class="btn btn-primary">Join my dinner</button>
+    </div>
     </div>
   </div>
-  <div class="host-details">
-        <h4>Details</h4>
-        <p>Hey guys, I am cooking Indian on Friday night for anyone who would like to join!</p>
-        <h4>Location</h4>
-        <p>Hoxton Station</p>
-        <h4>Date</h4>
-        <p>February 28th 2020</p>
-      <div class="join-button">
-        <button>Join my dinner</button>
-      </div>
-  </div>
+
+
+
 </div>
+
+
+
 
 
