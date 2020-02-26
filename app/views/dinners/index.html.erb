@@ -1,11 +1,15 @@
 <div class="cards-container">
   <% @dinners.each do |dinner| %>
-    <%= link_to dinner_path(dinner), class: "card-link" do %>
+
       <div class="card-trip">
+
         <img src="https://images.unsplash.com/photo-1582234383980-59933689fb44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80"/>
+
         <div class="card-trip-infos">
           <div class="card-trip-details">
+          <%= link_to dinner_path(dinner), class: "card-link" do %>
             <h2><%= dinner.title %></h2>
+          <% end %>
             <div class="dinner-details">
               <h6>Cuisine</h6>
               <p><%= dinner.cuisine %></p>
@@ -23,9 +27,13 @@
                <!--  <img src="" class="card-trip-user avatar-bordered" /> -->
             </div>
           </div>
+          <div id='delete-button'>
+            <%= link_to "<i class='fas fa-trash-alt'></i>".html_safe, dinner_path(dinner), method: :delete%>
+          </div>
         </div>
+
       </div>
-    <% end %>
+
   <% end %>
 </div>
 
