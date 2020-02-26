@@ -42,7 +42,7 @@ class DinnersController < ApplicationController
   private
 
   def dinner_params
-    params.require(:dinner).permit(:location, :cuisine, :capacity, :price, :title, :datetime)
+    params.require(:dinner).permit(:cuisine, :capacity, :price, :title)
   end
 
   def find_dinner_id
