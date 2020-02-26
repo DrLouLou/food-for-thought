@@ -14,10 +14,10 @@ class DinnersController < ApplicationController
   end
 
   def create
-    @dinner = Dinner.new(dinner_params)
+    @dinner = Dinner.new(cuisine: dinner_params[:cuisine], capacity: dinner_params[:capacity], price: dinner_params[:price], title: dinner_params[:title])
     @dinner.user = current_user
     if @dinner.save
-      redirect_to dinner_path(@dinner)
+      redirect_to dinners_path
     else
       render :new
     end
