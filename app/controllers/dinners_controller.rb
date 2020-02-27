@@ -14,7 +14,7 @@ class DinnersController < ApplicationController
   end
 
   def create
-    @dinner = Dinner.new(cuisine: dinner_params[:cuisine], capacity: dinner_params[:capacity], price: dinner_params[:price], title: dinner_params[:title])
+    @dinner = Dinner.new(dinner_params)
     @dinner.user = current_user
     if @dinner.save
       redirect_to dinners_path
@@ -42,7 +42,7 @@ class DinnersController < ApplicationController
   private
 
   def dinner_params
-    params.require(:dinner).permit(:cuisine, :capacity, :price, :title)
+    params.require(:dinner).permit(:cuisine, :capacity, :price, :title, :photo)
   end
 
   def find_dinner_id
