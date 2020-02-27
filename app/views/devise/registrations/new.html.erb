@@ -1,4 +1,17 @@
-<h2>Sign up</h2>
+<div class="body-container" style="background-image: url(https://images.unsplash.com/photo-1489710020360-66e504159b43?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80)">
+<!-- <p>Are you tired of eating alone?</p>
+<p>Want to showcase your cooking skills?</p>
+
+<p><strong>We got you covered! All you have to do is fill the form below 👇</strong></p> -->
+
+<div class="signup-container">
+<!-- <h1>What are you waiting for?</h1> -->
+<!-- <p>Are you tired of eating alone?</p>
+<p>Want to showcase your cooking skills?</p>
+
+<p><strong>We got you covered! All you have to do is fill the form below 👇</strong></p> -->
+<h2 >Sign up</h2>
+<!-- typed.js => class="sick-js" -->
 
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
@@ -17,9 +30,11 @@
                 input_html: { autocomplete: "new-password" } %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
-  </div>
+
+    <%= f.button :submit, "Sign up", class: "form-actions" %>
+
 <% end %>
 
-<%= render "devise/shared/links" %>
+<p>Already have an account?<%= render "devise/shared/links" %></p>
+</div>
+</div>
