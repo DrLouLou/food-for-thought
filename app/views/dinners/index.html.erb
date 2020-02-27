@@ -4,37 +4,17 @@
         <% photo_url = dinner.photo.attached? ? dinner.photo.service_url : "" %>
       <div class="card-trip" style="background-image: url('<%= cl_image_path dinner.photo.key, height: 300, width: 400, crop: :fill %>'); background-position: center;">
         <% else %>
-      <div class="card-trip">
-        <% end %>
-        <div class="card-trip-infos">
-          <div class="card-trip-details">
-          <%= link_to dinner_path(dinner), class: "card-link" do %>
-            <h2><%= dinner.title %></h2>
-          <% end %>
-            <div class="dinner-details">
-              <h6>Cuisine</h6>
-              <p><%= dinner.cuisine %></p>
-            </div>
-            <div class="dinner-details">
-              <h6>Location</h6>
-              <p><%= dinner.location %></p>
-            </div>
-            <div class="dinner-details">
-              <h6>Capacity</h6>
-              <p><%= dinner.capacity %></p>
-            </div>
-            <div>
-              <h2 class="card-trip-pricing">£<%= dinner.price %></h2>
-               <!--  <img src="" class="card-trip-user avatar-bordered" /> -->
-            </div>
-          </div>
-          <div id='delete-button'>
-            <%= link_to "<i class='fas fa-trash-alt'></i>".html_safe, dinner_path(dinner), method: :delete%>
-          </div>
-        </div>
+  <img src="https://images.unsplash.com/photo-1582234383980-59933689fb44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80" />
+  <% end %>
 
-      </div>
-
+  <div class="card-trip-infos">
+    <div>
+      <h2><%= dinner.title %></h2>
+      <p><strong>Cuisine: </strong><%= dinner.cuisine %> - <strong>Capacity: </strong><%= dinner.capacity %></p>
+    </div>
+    <h2 class="card-trip-pricing">£<%= dinner.price %></h2>
+  </div>
+</div>
   <% end %>
 </div>
 

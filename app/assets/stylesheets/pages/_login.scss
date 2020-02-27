@@ -1,7 +1,10 @@
 .login-container {
-  background-size: cover;
+   background-size: cover;
   background-position: center;
-  padding: 157px;
+  min-height: calc(100vh - 66px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -11,7 +14,6 @@ h1 {
 .login-box {
   padding: 20px 20px;
   width: 500px;
-  margin: 20px auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background-color: white;
