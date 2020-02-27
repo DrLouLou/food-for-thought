@@ -1,5 +1,8 @@
 .show-container {
-  margin: 10px 10px;
+  margin: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 550px;
 }
 
 .join-button {
@@ -15,4 +18,25 @@
 
 .card-product {
   padding: 5px 5px;
+}
+
+.show-image {
+  display: flex;
+  width: 85%;
+  background-size: cover;
+  background-position: end;
+  background-repeat: no-repeat;
+  background-color: #F2F2F2;
+}
+
+.background-show-square {
+  background: #F2F2F2;
+  width: 50%;
+  margin-right: 20px;
+  padding: 30px;
+
+}
+
+body {
+  background: #FFFFFF;
 }
