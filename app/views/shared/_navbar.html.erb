@@ -22,7 +22,10 @@
         </li>
       <% else %>
         <li class='nav-item'>
-          <%= link_to 'Log out', destroy_user_session_path, method: :delete,class: 'nav-link' %>
+          <%= link_to 'My Bookings', root_path, class: 'nav-link' %>
+        </li>
+        <li class='nav-item'>
+          <%= link_to 'Log out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
         </li>
       <% end %>
     </ul>

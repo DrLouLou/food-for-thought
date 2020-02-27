@@ -14,7 +14,9 @@
     </div>
     <div class="button">
      <div class="join-button">
-      <button class="btn btn-primary">Join my dinner</button>
+      <button class="btn btn-primary">
+        <%= link_to 'Join my dinner', dinner_bookings_path(@dinner) %>
+      </button>
     </div>
     </div>
   </div>
