@@ -1,75 +1,55 @@
-<%# link_to booking_review_path %>
 
 
- <!--  <div class="container">
-    <div class="row">
-      <div class="col-sm-10 offset-sm-2 ">
-        <div class="show-container">
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1514843319620-4f042827c481?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)">
-          <%= @dinner.title %>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-8 offset-sm-2">
-        <div class="card-product">
-        <img src="https://avatars3.githubusercontent.com/u/58525813?s=460&v=4" />
-          <div class="card-product-infos">
+
+
+  <div class="show-page">
+    <!-- <div class="header-line">
+
+    </div> -->
+    <div class="show-container">
+      <div class="background-show-square">
+          <div class="solo-dinner-title">
             <p> <strong>Title:</strong> <%= @dinner.title %></p>
+          </div>
+          <div class="dinner-title">
+            <p> <strong>Description:</strong> Hi guys, I'm hosting a small dinner, come along if you fancy some <%= @dinner.title %>!</p>
             <p> <strong>Cuisine:</strong> <%= @dinner.cuisine %></p>
             <p> <strong>Capacity:</strong> <%= @dinner.capacity %> people</p>
             <p> <strong>Location:</strong> <%= @dinner.location %></p>
           </div>
-          <div class="button">
-            <div class="join-button">
-              <%= link_to dinners_path do %>
-                <button class="btn btn-primary">Join my dinner</button>
-              <% end %>
-            </div>
-          </div>
+
+        <div class="button-blue">
+          <%= link_to dinners_path do %>
+            <button class="btn btn-primary">Join my dinner</button>
+          <% end %>
         </div>
+
+        <div class="avatar">
+          <img class="avatar" alt="avatar" src="https://ca.slack-edge.com/T02NE0241-US8A40REF-4272afc2a7c4-512" />
+        </div>
+
+        <div class="price-position">
+          <p>Price: £<%= @dinner.price %></p>
+        </div>
+
       </div>
-    </div>
-  </div> -->
-  <div class="show-page">
-    <div class="show-container">
-      <div class="background-show-square">
-        <p> <strong>Title:</strong> <%= @dinner.title %></p>
-        <p> <strong>Cuisine:</strong> <%= @dinner.cuisine %></p>
-        <p> <strong>Capacity:</strong> <%= @dinner.capacity %> people</p>
-        <p> <strong>Location:</strong> <%= @dinner.location %></p>
-        <%= link_to dinners_path do %>
-          <button class="btn btn-primary">Join my dinner</button>
-        <% end %>
-      </div>
-
-
-
-
-      <!-- <div class="description"> -->
-
-        <!-- <div class="upper-text"> -->
-          <!-- <p> <strong>Title:</strong> <%= @dinner.title %></p>
-          <p> <strong>Cuisine:</strong> <%= @dinner.cuisine %></p>
-          <p> <strong>Capacity:</strong> <%= @dinner.capacity %> people</p>
-          <p> <strong>Location:</strong> <%= @dinner.location %></p> -->
-        <!-- </div> -->
-      <!-- </div> -->
 
       <div class="show-image"style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
-        <%= @dinner.title %>
+        <div class="move-text">
+        </div>
       </div>
     </div>
     <div class="footer">
-        <div class="footer-copyright">
-          <p>© 2020 FFT, Inc. All rights reserved·Privacy·Terms·Sitemap·UK Modern Slavery Act·Company details</p>
-        </div>
-        <div class="footer-links">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
+      <div class="footer-copyright">
+        <p>© 2020 FFT, Inc. All rights reserved·Privacy·Terms·Sitemap·UK Modern Slavery Act·Company details</p>
       </div>
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
   </div>
 
