@@ -1,0 +1,25 @@
+.body-container {
+  background-size: cover;
+  background-position: center;
+  padding: 138px;
+  background-image: linear-gradient(to bottom, white, green)
+}
+
+h1 {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+p {
+  margin: 10px;
+}
+
+.signup-container {
+  padding: 20px 20px;
+  width: 500px;
+  margin: 20px auto;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
