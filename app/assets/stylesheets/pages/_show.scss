@@ -1,5 +1,12 @@
+body {
+  background: #FFFFFF;
+}
+
 .show-container {
-  margin: 10px 10px;
+  margin: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  height: 550px;
 }
 
 .join-button {
@@ -15,4 +22,58 @@
 
 .card-product {
   padding: 5px 5px;
+}
+
+.show-image {
+  display: flex;
+  width: 85%;
+  background-size: cover;
+  background-position: end;
+  background-repeat: no-repeat;
+  background-color: #F2F2F2;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.move-text {
+  padding-left: 350px;
+  padding-top: 30px;
+  text-size: 20px
+}
+
+.background-show-square {
+  background: #F2F2F2;
+  width: 50%;
+  margin-right: 20px;
+  padding: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.header-line {
+  border-bottom: 0.1px solid lightgrey;
+  height: 20px;
+  margin: 30px;
+}
+
+.button-blue {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+}
+
+.price-position {
+  position: absolute;
+  bottom: 0px;
+  left: 18px;
+}
+
+.dinner-title {
+  padding-top: 30px;
+}
+
+.solo-dinner-title {
+  text-align: center;
+  padding: 0px;
 }
