@@ -6,7 +6,7 @@
   flex-grow: 0;
 }
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 55px;
 }
 
 .home_navbar_style {
@@ -16,6 +16,39 @@
 .not_home_navbar_style {
   background-color: #484848 !important;
   box-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+
+#navbar {
+  width: auto;
+  background-color: transparent;
+  color: #484848;
+  width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-size: 17px;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    color: white;
+    border-bottom: 2px solid white;
+
+  }
+}
+
+.nav-item {
+ space-around: 100px;
+
+}
+
+.navbar-brand {
+  height: 50px;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.nav-link {
+  padding: 20px;
 }
 
 
