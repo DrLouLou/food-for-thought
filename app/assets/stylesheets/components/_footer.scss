@@ -1,5 +1,5 @@
 .footer {
-  background: #F4F4F4;
+  background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,6 +9,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
+  border-top: 0.1px solid lightgrey;
 
 }
 .footer-links {
