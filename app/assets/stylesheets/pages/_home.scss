@@ -23,7 +23,6 @@
   left: 20%;
 }
 
-
 h5 {
   text-align: left;
   font-size: 14px;
@@ -86,41 +85,16 @@ h5 {
   font-family: 'Arizonia';
   font-size: 40px;
   }
-#navbar {
-  width: auto;
-  background-color: transparent;
-  color: #484848;
-  width: 100%;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: white;
-  &:hover {
-    color: darkgreen;
-  }
-}
-
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-    color: white;
-  &:hover {
-   color: darkgreen;
-  }
-}
-
-.nav-item {
- space-around: 100px;
-
-}
 
 .form {
   height: 300px;
 }
 
-.navbar-brand {
-  height: 50px;
-  width: auto;
-}
-
-.custom-select {
+.custom-select{
   color: #6C757C;
 }
+
+.datepicker {
+  color: #6C757C;
+}
+

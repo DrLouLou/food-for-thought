@@ -1,1 +1,6 @@
-<h1>Make a New Booking!</h1>
+<h1>Would you like to confirm your booking?</h1>
+
+<%= simple_form_for(@booking) do |f| %>
+  <%= f.button, :class => "btn btn-inverse btn-small", :label => "Cancel" %>
+  <%= f.submit, class: 'btn btn-primary' %>
+<% end %>

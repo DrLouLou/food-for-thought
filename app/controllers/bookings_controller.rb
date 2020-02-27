@@ -1,5 +1,6 @@
 class BookingsController < ApplicationController
   before_action :find_dinner_id
+
   def new
     @booking = Booking.new
   end
