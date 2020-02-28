@@ -1,0 +1,33 @@
+.whole-form {
+  // border: solid 2px black;
+  margin: 0px 150px;
+  margin-bottom: 100px;
+  padding: 60px 50px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  overflow: hidden;
+  float: top;
+  border: 1px white solid;
+  background-color: white;
+  border-radius: 5px;
+  height: 60%;
+  width: 35%;
+  position: relative;
+  flex-direction: column;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1530062845289-9109b2c9c868?ixlib=rb-1.2.1&auto=format&fit=crop&w=3304&q=80");
+}
+
+.title {
+  font-family: 'Arizonia';
+  font-size: 40px;
+  top: 10px;
+  display: flex;
+}
