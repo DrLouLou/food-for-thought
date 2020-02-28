@@ -23,14 +23,15 @@ require("channels")
 // ----------------------------------------------------
 
 import "bootstrap";
-import Typed from 'typed.js'
+import Typed from 'typed.js';
 
-var options = {
-  strings: ['Sign-up', 'What are you waiting for?', 'Yo'],
-  typeSpeed: 20,
-  backSpeed: 20,
-  loop: true,
-  shuffle: true
-};
-
-var typed = new Typed('.sick-js', options)
+if (document.querySelector('.sick-js')) {
+  var options = {
+    strings: ['Sign-up', 'What are you waiting for?', 'Yo'],
+    typeSpeed: 20,
+    backSpeed: 20,
+    loop: true,
+    shuffle: true
+  };
+  new Typed('.sick-js', options)
+}
