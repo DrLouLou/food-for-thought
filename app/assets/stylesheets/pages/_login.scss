@@ -4,7 +4,7 @@
   min-height: calc(100vh - 66px);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 h1 {
@@ -15,9 +15,11 @@ h1 {
   padding: 20px 20px;
   width: 500px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: white;
   font-family: Raleway;
+  margin-right: 570px;
+  margin-bottom: 210px;
 }
 
 // .form-inputs {
