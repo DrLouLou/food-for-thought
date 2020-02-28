@@ -1,20 +1,29 @@
 <div class="cards-container">
   <% @dinners.each do |dinner| %>
-      <% if dinner.photo.attached? %>
-        <% photo_url = dinner.photo.attached? ? dinner.photo.service_url : "" %>
-      <div class="card-trip" style="background-image: url('<%= cl_image_path dinner.photo.key, height: 300, width: 400, crop: :fill %>'); background-position: center;">
+    <div class="card-trip">
+      <%= link_to dinner_path(dinner) do %>
+        <% if dinner.photo.attached? %>
+          <img class="card-img" src="<%= cl_image_path dinner.photo.key, height: 300, maximumwidth: 100, crop: :fill %>"/>
         <% else %>
-  <img src=<%= dinner.image_url %> />
-  <% end %>
+          <img class="card-img" src=<%= dinner.image_url %> />
+        <% end %>
 
   <div class="card-trip-infos">
     <div>
       <h2><%= dinner.title %></h2>
       <p><strong>Cuisine: </strong><%= dinner.cuisine %> - <strong>Capacity: </strong><%= dinner.capacity %></p>
+      <p><strong>Capacity: </strong><%= dinner.capacity %></p>
     </div>
-    <h2 class="card-trip-pricing">£<%= dinner.price %></h2>
-  </div>
-</div>
+      <h2 class="card-trip-pricing">£<%= dinner.price %></h2>
+    </div>
+  <% end %>
+    </div>
   <% end %>
 </div>
+
+
+
+
+
+
 
