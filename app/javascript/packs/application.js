@@ -23,7 +23,7 @@ require("channels")
 // ----------------------------------------------------
 
 import "bootstrap";
-import Typed from 'typed.js'
+import Typed from 'typed.js';
 
 if (document.querySelector('.sick-js')) {
   var options = {
