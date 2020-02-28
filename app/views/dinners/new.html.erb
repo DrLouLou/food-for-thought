@@ -1,14 +1,16 @@
 <div class="background">
     <div class="container whole-form">
-      <h1 class='title'><em>HostANewDinner</em></h1>
+      <h1 class='host-form-title'>Host A Dinner</h1>
       <%= simple_form_for(@dinner) do |f| %>
+      <div class="form-inputs">
         <%= f.input :title %>
         <%= f.input :cuisine %>
         <%= f.input :capacity %>
         <%= f.input :price %>
         <%= f.input :photo %>
+      </div>
         <%#= f.button :button, "Clear", type: "reset", class: "btn-outline-secondary" %>
-        <%= f.button :submit, class: "btn btn-flat", id: "button", style: "position: absolute; bottom: 55px; right: 50px;" %>
+        <%= f.button :submit, class: "btn btn-flat", id: "button", style: "position: absolute; bottom: 65px; right: 40px; border-radius: 5px" %>
       <% end %>
     </div>
 </div>
