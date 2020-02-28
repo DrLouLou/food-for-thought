@@ -3,7 +3,7 @@
     <div class="card-trip">
       <%= link_to dinner_path(dinner) do %>
         <% if dinner.photo.attached? %>
-          <img class="card-img" src="<%= cl_image_path dinner.photo.key, height: 300, maximumwidth: 100, crop: :fill %>"/>
+          <img class="card-img" src="<%= cl_image_path dinner.photo.key, maximumheight: 300, maximumwidth: 100, crop: :fill %>"/>
         <% else %>
           <img class="card-img" src=<%= dinner.image_url %> />
         <% end %>
@@ -12,7 +12,7 @@
     <div>
       <h2><%= dinner.title %></h2>
       <p><strong>Cuisine: </strong><%= dinner.cuisine %> - <strong>Capacity: </strong><%= dinner.capacity %></p>
-      <p><strong>Capacity: </strong><%= dinner.capacity %></p>
+      <p><strong>Location: </strong><%= dinner.location %></p>
     </div>
       <h2 class="card-trip-pricing">£<%= dinner.price %></h2>
     </div>
