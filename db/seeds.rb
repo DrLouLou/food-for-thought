@@ -31,10 +31,10 @@ end
 
 
 puts "This is gonna take a while guys"
-30.times.with_index do |dinner, index|
+100.times.with_index do |dinner, index|
   current_cuisine = cuisine.sample
   dish = dishes[current_cuisine].sample
-  url = "https://source.unsplash.com/4#{index * 10}x2#{index * 10}?&#{dish},Food,#{current_cuisine}"
+  url = "https://source.unsplash.com/400x225?&#{dish},Food,#{current_cuisine}"
   dinners = Dinner.create!(
     user: guest_user_log_in && host_user_log_in,
     location: 'London',
