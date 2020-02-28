@@ -25,7 +25,7 @@ dishes = {
   'French' => %w[Baguette Crepe],
   'Vietnamese' => %w[Pho]
 }
-100.times do |dinner|
+30.times do |dinner|
   current_cuisine = cuisine.sample
   dish = dishes[current_cuisine].sample
   url = "https://source.unsplash.com/1600x900?#{dish},Food,#{current_cuisine}"
