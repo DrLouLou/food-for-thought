@@ -14,18 +14,21 @@ User.destroy_all
 puts 'Creating dinners...'
 guest_user_log_in = User.create(email: 'zach@gmail.com', password: '111111')
 host_user_log_in = User.create(email:'tom@gmail.com', password:'111111')
-cuisine = ['Italian', 'Spanish', 'Mexican', 'Chinese', 'Indian']
+cuisine = ['Italian', 'Spanish', 'Mexican', 'Chinese', 'Indian', 'American', 'French', 'Vietnamese']
 dishes = {
-  'Italian' => %w[Pizza Pasta Cotoletta Bistecca Ragu Cappuccino],
-  'Spanish' => %w[Tapas Morcilias Paella Alhambra Patanegra Polpo],
-  'Mexican' => %w[Tacos Burritos Salad Guacamole Nachos Margarita],
-  'Chinese' => %w[Ramen Friedrice Wok Bun Dimsum Dumpling],
-  'Indian' => %w[Curry Masala Naan Lassie Rice]
+  'Italian' => %w[Pizza Pasta Cappuccino],
+  'Spanish' => %w[Paella],
+  'Mexican' => %w[Tacos Burritos Nachos],
+  'Chinese' => %w[Ramen Dimsum Dumplings],
+  'Indian' => %w[Curry Naan],
+  'American' => %w[Cheeseburger Pancake Sandwich],
+  'French' => %w[Baguette Crepe],
+  'Vietnamese' => %w[Pho]
 }
 500.times do |dinner|
   current_cuisine = cuisine.sample
   dish = dishes[current_cuisine].sample
-  url = "https://source.unsplash.com/1600x900?Food,#{current_cuisine},#{dish}"
+  url = "https://source.unsplash.com/1600x900?#{dish},Food,#{current_cuisine}"
   dinners = Dinner.create!(
     user: guest_user_log_in && host_user_log_in,
     location: 'London',
