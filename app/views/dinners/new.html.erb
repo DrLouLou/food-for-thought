@@ -1,16 +1,16 @@
-<h1>Host a New Dinner</h1>
-
-<%= simple_form_for(@dinner) do |f| %>
-  <%= f.input :title %>
-  <%= f.input :cuisine %>
-  <%= f.input :capacity %>
-  <%= f.input :price %>
-  <%= f.input :photo %>
-  <%= f.button :submit, class: "btn-primary" %>
-  <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
-<% end %>
-
-
-
+<div class="background">
+    <div class="container whole-form">
+      <h1 class='title'><em>HostANewDinner</em></h1>
+      <%= simple_form_for(@dinner) do |f| %>
+        <%= f.input :title %>
+        <%= f.input :cuisine %>
+        <%= f.input :capacity %>
+        <%= f.input :price %>
+        <%= f.input :photo %>
+        <%#= f.button :button, "Clear", type: "reset", class: "btn-outline-secondary" %>
+        <%= f.button :submit, class: "btn btn-flat", id: "button", style: "position: absolute; bottom: 55px; right: 50px;" %>
+      <% end %>
+    </div>
+</div>
 
 
