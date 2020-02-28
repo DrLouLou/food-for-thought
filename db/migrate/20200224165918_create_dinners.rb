@@ -7,6 +7,7 @@ class CreateDinners < ActiveRecord::Migration[6.0]
       t.integer :capacity
       t.integer :price
       t.string :title
+      t.string :image_url
       t.date :date
 
       t.timestamps
