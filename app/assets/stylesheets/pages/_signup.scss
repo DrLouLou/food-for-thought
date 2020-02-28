@@ -4,7 +4,19 @@
   min-height: calc(100vh - 66px);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+h2 {
+  font-family: Raleway;
+  font-size: 28px;
+  color: #484848;
+}
+
+.form-inputs {
+  font-family: Raleway;
+  font-size: 14px;
+  color: #484848;
 }
 
 p {
@@ -16,10 +28,11 @@ p {
   padding: 20px 20px;
   width: 500px;
   background-color: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 5px;
   font-family: Raleway;
-
+  margin-right: 570px;
+  margin-bottom: 150px;
 }
 
 .form-actions {
@@ -32,6 +45,10 @@ p {
   width: 100%;
   border: none;
 }
+
+// .form-actions:hover {
+//   background-color: #A63C06;
+// }
 
 // .sick-js {
 //   display: inline;

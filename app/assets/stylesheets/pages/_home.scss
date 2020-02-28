@@ -6,7 +6,8 @@
   padding: 20px 20px;
   display: flex;
   justify-content: space-around;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  // box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   float: top;
   border: 1px white solid;
@@ -76,6 +77,7 @@ h5 {
   background: green;
   transition: background 0.3s ease;
   margin-top: 12px;
+  font-family: Raleway;
   &:hover {
   background: darkgreen;
   color: white;
