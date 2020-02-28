@@ -1,5 +1,5 @@
 <div class="cards-container">
-  <% @dinners.each do |dinner| %>
+  <% @dinners.shuffle.each do |dinner| %>
     <div class="card-trip">
       <%= link_to dinner_path(dinner) do %>
         <% if dinner.photo.attached? %>
