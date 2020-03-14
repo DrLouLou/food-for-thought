@@ -2,8 +2,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
-  margin: 10px;
+  margin: auto;
   padding: 10px;
+
+  @media (max-width: 1439px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 1086px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .card-trip:hover {
@@ -18,7 +30,7 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 340px;
+  width: 100%;
   border-radius: 10px;
   transition: 1s;
 }
